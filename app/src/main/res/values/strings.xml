@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Example</string>
+    <string name="next">Next</string>
+
+    <string name="app_exit_message">Press again to close App</string>
+
+    <string name="genric_error">Oops! Something went wrong. Please try again later.</string>
+    <string name="no_connection">Oops! Seems like you are not connected to the internet.</string>
+    <string name="slot_available">Slot available</string>
+    <string name="slot_not_available">Slot Not available</string>
+
+</resources>

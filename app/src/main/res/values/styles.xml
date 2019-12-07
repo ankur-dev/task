@@ -1,0 +1,46 @@
+<resources>
+
+
+    <color name="toolbar_bg_color">@color/colorPrimary</color>
+
+    <style name="ToolbarStyle" parent="@style/ThemeOverlay.AppCompat.ActionBar">
+        <!-- Customize color of navigation drawer icon and back arrow -->
+        <item name="colorControlNormal">@color/white</item>
+    </style>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorPrimaryDark</item>
+
+        // this is for avoid black screen before splash
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowDisablePreview">true</item>
+        <item name="colorControlNormal">@color/gray_dark</item>
+        <item name="colorControlActivated">@color/gray_dark</item>
+    </style>
+
+    <style name="appBtnStyle">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/text_size_14</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_margin">@dimen/margin_10</item>
+        <item name="android:background">@drawable/app_btn_with_states</item>
+    </style>
+
+    <style name="spinnerStyle">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/text_size_14</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_margin">@dimen/margin_10</item>
+        <item name="android:background">@drawable/app_btn_with_states</item>
+    </style>
+
+</resources>

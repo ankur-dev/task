@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nestedScrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+
+    <com.ankur.example.customViews.AppRobotoBoldTextView
+        android:id="@+id/dateBtn"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:textColor="@color/header_text_color"
+        android:textColorHint="@color/gray_dark"
+        android:hint="MeetingDate"
+        android:gravity="center_vertical"
+        android:paddingStart="@dimen/padding_10"
+        android:textSize="@dimen/text_size_14"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/spinner_bg"
+        app:layout_constraintBottom_toTopOf="@+id/startTimeBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.ankur.example.customViews.AppRobotoBoldTextView
+        android:id="@+id/startTimeBtn"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:textColor="@color/header_text_color"
+        android:textColorHint="@color/gray_dark"
+        android:hint="Start Time"
+        android:gravity="center_vertical"
+        android:paddingStart="@dimen/padding_10"
+        android:textSize="@dimen/text_size_14"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/spinner_bg"
+        app:layout_constraintBottom_toTopOf="@+id/endTimeBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dateBtn" />
+
+    <com.ankur.example.customViews.AppRobotoBoldTextView
+        android:id="@+id/endTimeBtn"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:textColor="@color/header_text_color"
+        android:textColorHint="@color/gray_dark"
+        android:hint="End Time"
+        android:gravity="center_vertical"
+        android:paddingStart="@dimen/padding_10"
+        android:textSize="@dimen/text_size_14"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="21dp"
+        android:background="@drawable/spinner_bg"
+        app:layout_constraintBottom_toTopOf="@+id/descriptionEt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/startTimeBtn" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/descriptionEt"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="39dp"
+        android:background="@drawable/et_bg"
+        android:gravity="start"
+        android:hint="Description"
+        android:minLines="4"
+        android:textSize="@dimen/text_size_14"
+        android:padding="@dimen/padding_10"
+        android:textColor="@color/header_text_color"
+        android:textColorHint="@color/gray_dark"
+        app:layout_constraintBottom_toTopOf="@+id/scheduleMeetingBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/endTimeBtn" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/scheduleMeetingBtn"
+        style="@style/appBtnStyle"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:text="submit"
+        app:layout_constraintBottom_toBottomOf="@+id/endTimeBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/descriptionEt" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/avalibility"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="@dimen/text_size_16"
+        android:textColor="@color/header_text_color"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="@dimen/margin_30"
+        app:layout_constraintTop_toBottomOf="@+id/scheduleMeetingBtn"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

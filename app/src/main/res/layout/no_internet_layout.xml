@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/noInternetLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f5f5f5"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:visibility="gone"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <!--<com.ankur.example.customViews.AppRobotoBoldTextView-->
+        <!--android:id="@+id/noResultFoundUpperText"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="@string/oh"-->
+        <!--android:textColor="@color/black"-->
+        <!--android:textSize="24sp" />-->
+
+    <!--<ImageView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginTop="@dimen/margin_25"-->
+        <!--android:contentDescription="@string/app_name"-->
+        <!--android:src="@drawable/empty_icon" />-->
+
+    <!--<com.ankur.example.customViews.AppRobotoLightTextView-->
+        <!--android:id="@+id/noInternetText"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_margin="@dimen/margin_25"-->
+        <!--android:gravity="center"-->
+        <!--android:text="@string/no_connection"-->
+        <!--android:textColor="@color/black"-->
+        <!--android:textSize="@dimen/text_size_16" />-->
+
+    <!--<com.ankur.example.customViews.AppRobotoRegularTextView-->
+        <!--android:id="@+id/retryInternetBtn"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginTop="@dimen/margin_25"-->
+        <!--android:padding="@dimen/padding_10"-->
+        <!--android:text="@string/try_again"-->
+        <!--android:textColor="@color/red_color"-->
+        <!--android:textSize="@dimen/text_size_16" />-->
+</LinearLayout>

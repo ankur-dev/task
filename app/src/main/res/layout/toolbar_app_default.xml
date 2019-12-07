@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:background="@color/toolbar_bg_color"
+    android:theme="@style/ToolbarStyle"
+    app:contentInsetEnd="0dp"
+    app:contentInsetLeft="0dp"
+    app:contentInsetRight="0dp"
+    app:contentInsetStart="0dp"
+    app:contentInsetStartWithNavigation="0dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/transparent"
+        android:gravity="center_vertical">
+
+        <LinearLayout
+            android:id="@+id/toolbarLeftBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:visibility="invisible">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:background="@drawable/back" />
+
+            <com.ankur.example.customViews.AppRobotoRegularTextView
+                android:id="@+id/toolbarLeftBtnTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_5"
+                android:text="Back"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_14" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/toolbarRightBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:gravity="center_vertical"
+            android:visibility="invisible">
+
+            <com.ankur.example.customViews.AppRobotoRegularTextView
+                android:id="@+id/toolbarRightBtnTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/next"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_14" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:background="@drawable/next"
+                android:layout_marginStart="@dimen/margin_5" />
+
+        </LinearLayout>
+
+        <com.ankur.example.customViews.AppRobotoBoldTextView
+            android:id="@+id/activityTitle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/margin_5"
+            android:layout_marginEnd="@dimen/margin_5"
+            android:layout_toStartOf="@+id/toolbarRightBtn"
+            android:textSize="@dimen/text_size_16"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:layout_toEndOf="@id/toolbarLeftBtn" />
+
+    </RelativeLayout>
+</androidx.appcompat.widget.Toolbar>
